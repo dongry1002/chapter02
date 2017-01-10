@@ -14,6 +14,16 @@ public class SongApp {
 		
 		iu.show();
 		
+		
+		Song song2 = new Song(null,"에일리",null,"첫눈처럼 너에게 가겠다",0,2017);
+		song2.show();
+		
+		Song song3= new Song("크러쉬","소파");
+		song3.show();
+		
+		Song song4= new Song("잔나비","뜨여");
+		song4.show();
+		
 
 	}
 
