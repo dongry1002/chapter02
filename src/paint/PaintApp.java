@@ -5,19 +5,46 @@ public class PaintApp {
 	public static void main(String[] args) {
 		
 		Point pt1=new Point();
-		
 		pt1.setX(100);
 		pt1.setY(200);
-		pt1.show();
+		Point pt2=new Point(50,100);		
+		ColorPoint pt3=new ColorPoint(500,500,"red");
+	
 		
-		Point pt2=new Point(50,100);
-		pt2.show();
+		Rect rect = new Rect();
+		Circle circle=new Circle();
+		Triangle triangle=new Triangle();
+		//그리기
+		drawPoint(pt1);
+		drawPoint(pt2);	
 		
-		pt1.show(false);
-		pt2.show(false);
+		//Point p=pt3;
+		drawPoint(pt3);
 		
-		pt2.show();
-
+		
+//		drawRect(rect);
+//		drawCircle(circle);
+		drawShape(rect);
+		drawShape(circle);
+		drawShape(triangle);
 	}
+	public static void drawPoint(Point point){
+		point.show();
+	}
+	
+	public static void drawShape(Shape shape){
+		shape.draw();
+	}
+	
+	
+	
+	
+//	public static void drawRect(Rect rect){
+//		rect.draw();
+//		
+//	}
+//	public static void drawCircle(Circle circle){
+//		circle.draw();
+//	}
 
 }
