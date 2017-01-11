@@ -1,6 +1,6 @@
 package paint;
 
-public class ColorPoint extends Point {
+public class ColorPoint extends Point implements Drawable{
 	private String color;
 	
 	public ColorPoint(int x,int y,String color){

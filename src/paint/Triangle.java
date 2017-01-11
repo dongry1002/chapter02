@@ -1,6 +1,6 @@
 package paint;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable{
 
 	
 	

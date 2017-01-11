@@ -1,6 +1,6 @@
 package paint;
 
-public class Rect extends Shape {
+public class Rect extends Shape implements Drawable{
 	private int x1;
 	private int xy;
 	private int x2;
