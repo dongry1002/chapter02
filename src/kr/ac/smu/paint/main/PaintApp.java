@@ -1,4 +1,12 @@
-package paint;
+package kr.ac.smu.paint.main;
+
+import kr.ac.smu.paint.i.Drawable;
+import kr.ac.smu.paint.point.ColorPoint;
+import kr.ac.smu.paint.point.Point;
+import kr.ac.smu.paint.shape.Circle;
+import kr.ac.smu.paint.shape.Rect;
+import kr.ac.smu.paint.shape.Shape;
+import kr.ac.smu.paint.shape.Triangle;
 
 public class PaintApp {
 
@@ -21,6 +29,7 @@ public class PaintApp {
 		//Point p=pt3;
 		draw(pt3);
 		
+		drawShape(rect);
 		
 //		drawRect(rect);
 //		drawCircle(circle);
@@ -32,9 +41,9 @@ public class PaintApp {
 //		point.show();
 //	}
 //	
-//	public static void drawShape(Shape shape){
-//		shape.draw();
-//	}
+	public static void drawShape(Shape shape){
+		shape.draw();
+	}
 //	
 	public static void draw(Drawable drawable){
 		drawable.draw();

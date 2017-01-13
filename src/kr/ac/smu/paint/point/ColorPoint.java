@@ -1,4 +1,6 @@
-package paint;
+package kr.ac.smu.paint.point;
+
+import kr.ac.smu.paint.i.Drawable;
 
 public class ColorPoint extends Point implements Drawable{
 	private String color;

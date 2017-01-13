@@ -1,4 +1,6 @@
-package paint;
+package kr.ac.smu.paint.shape;
+
+import kr.ac.smu.paint.i.Drawable;
 
 public class Circle extends Shape implements Drawable {
 	
@@ -7,7 +9,7 @@ public class Circle extends Shape implements Drawable {
 	private int rad;
 	
 	
-	@Override
+	//@Override
 	public void draw() {
 		System.out.println("원을 그렸습니다.");
 	}
